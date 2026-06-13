@@ -1,0 +1,38 @@
+site_name: Inteligencia Artificial Moderna
+site_description: Guía introductoria sobre Inteligencia Artificial y sus aplicaciones
+site_author: Jorge Avalos
+
+theme:
+  name: material
+  language: es
+
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: cyan
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Inicio: index.md
+  - Fundamentos: fundamentos.md
+  - Aplicaciones: aplicaciones.md
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
